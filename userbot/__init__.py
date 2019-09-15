@@ -44,15 +44,15 @@ if version_info[0] < 3 or version_info[1] < 6:
 
 # Check if the config was edited by using the already used variable.
 # Basically, its the 'virginity check' for the config file ;)
-CONFIG_CHECK = os.environ.get("___________PLOX_______REMOVE_____THIS_____LINE__________", None)
+CONFIG_CHECK = os.environ.get("", None)
 
 if CONFIG_CHECK:
     LOGS.error("Please remove the line mentioned in the first hashtag from the config.env file")
     quit(1)
 
 # Telegram App KEY and HASH
-API_KEY = os.environ.get("API_KEY", None)
-API_HASH = os.environ.get("API_HASH", None)
+API_KEY = os.environ.get("API_KEY", '839167')
+API_HASH = os.environ.get("API_HASH", 'f5dcbeaa5348e84284b22a9b92d1dd5a')
 
 # Userbot Session String
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
@@ -76,7 +76,7 @@ CONSOLE_LOGGER_VERBOSE = sb(
 DB_URI = os.environ.get("DATABASE_URL", None)
 
 # OCR API key
-OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
+OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", '3c82d7afb688957')
 
 # remove.bg API key
 REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
@@ -86,7 +86,7 @@ CHROME_DRIVER = os.environ.get("CHROME_DRIVER", None)
 GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", None)
 
 # OpenWeatherMap API Key
-OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", None)
+OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", '7fe0881419a4703e76db0a02425b1b16')
 
 # Anti Spambot Config
 ANTI_SPAMBOT = sb(os.environ.get(
@@ -99,7 +99,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get(
 
 # Youtube API key
 YOUTUBE_API_KEY = os.environ.get(
-    "YOUTUBE_API_KEY", None
+    "YOUTUBE_API_KEY", 'AIzaSyCI26lFRwzf-SW0EuTM23SAPT2X7Z5IGWM'
     )
 
 # Clean Welcome
